@@ -1,0 +1,82 @@
+name: mana_assistant
+description: MANA AI Assistant - دستیار هوشمند همه‌کاره ایرانی
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Animation
+  cupertino_icons: ^1.0.6
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  glassmorphism: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  
+  # State Management
+  provider: ^6.1.1
+  get: ^4.6.6
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.2
+  
+  # Network & API
+  http: ^1.2.0
+  dio: ^5.4.0
+  google_generative_ai: ^0.2.1
+  
+  # Utilities
+  intl: ^0.19.0
+  persian_datetime_picker: ^2.6.0
+  shamsi_date: ^1.0.0
+  clipboard: ^0.1.3
+  permission_handler: ^11.2.0
+  url_launcher: ^6.2.4
+  
+  # Floating & Overlay
+  flutter_overlay_window: ^0.4.6
+  system_alert_window: ^1.4.0
+  
+  # Icons & SVG
+  flutter_svg: ^2.0.9
+  font_awesome_flutter: ^10.7.0
+  
+  # Weather & Location
+  weather: ^3.1.1
+  geolocator: ^11.0.0
+  geocoding: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+    - assets/hafez/
+    - assets/sounds/
+  
+  fonts:
+    - family: Vazir
+      fonts:
+        - asset: assets/fonts/Vazir-Regular.ttf
+        - asset: assets/fonts/Vazir-Bold.ttf
+          weight: 700
+    - family: IranSans
+      fonts:
+        - asset: assets/fonts/IranSans.ttf
